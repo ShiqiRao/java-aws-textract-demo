@@ -1,0 +1,385 @@
+Block Id : 991d0abe-7114-463e-af3c-45090507fb44
+    Detected text: December
+    Type: WORD
+    Confidence: 99.96418
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.06022302,Height: 0.028780114,Left: 0.55663514,Top: 0.78805614}
+        Polygon: [{X: 0.55663514,Y: 0.78805614}, {X: 0.6168581,Y: 0.78805614}, {X: 0.6168581,Y: 0.81683624}, {X: 0.55663514,Y: 0.81683624}]
+    Entity Types
+        No entity type
+
+Block Id : 9dbc80d9-74e7-4bf3-aace-ed81b8cda97f
+    Detected text: 22,
+    Type: WORD
+    Confidence: 98.316574
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.018533457,Height: 0.031074699,Left: 0.61937445,Top: 0.78772944}
+        Polygon: [{X: 0.61937445,Y: 0.78772944}, {X: 0.6379079,Y: 0.78772944}, {X: 0.6379079,Y: 0.81880414}, {X: 0.61937445,Y: 0.81880414}]
+    Entity Types
+        No entity type
+
+Block Id : 9831f8af-0fe3-4c08-8858-8e974f58bffd
+    Detected text: 2110
+    Type: WORD
+    Confidence: 99.712685
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.029327648,Height: 0.026742542,Left: 0.64152414,Top: 0.78776413}
+        Polygon: [{X: 0.64152414,Y: 0.78776413}, {X: 0.67085177,Y: 0.78776413}, {X: 0.67085177,Y: 0.81450665}, {X: 0.64152414,Y: 0.81450665}]
+    Entity Types
+        No entity type
+
+Block Id : 318f9e0a-6615-43a3-8e0c-5b927898a7f3
+    Detected text: undetermined
+    Type: WORD
+    Confidence: 99.94999
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.08892409,Height: 0.02925131,Left: 0.22119011,Top: 0.1214624}
+        Polygon: [{X: 0.22119011,Y: 0.1214624}, {X: 0.3101142,Y: 0.1214624}, {X: 0.3101142,Y: 0.15071371}, {X: 0.22119011,Y: 0.15071371}]
+    Entity Types
+        No entity type
+
+Block Id : 98d899bb-24b7-447a-9ac4-909025ad9011
+    Detected text: Derence
+    Type: WORD
+    Confidence: 55.108982
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.12760524,Height: 0.06587871,Left: 0.36322933,Top: 0.75526917}
+        Polygon: [{X: 0.36322933,Y: 0.75526917}, {X: 0.49083456,Y: 0.75526917}, {X: 0.49083456,Y: 0.8211479}, {X: 0.36322933,Y: 0.8211479}]
+    Entity Types
+        No entity type
+
+Block Id : 991d0abe-7114-463e-af3c-45090507fb44
+    Detected text: December
+    Type: WORD
+    Confidence: 99.96418
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.06022302,Height: 0.028780114,Left: 0.55663514,Top: 0.78805614}
+        Polygon: [{X: 0.55663514,Y: 0.78805614}, {X: 0.6168581,Y: 0.78805614}, {X: 0.6168581,Y: 0.81683624}, {X: 0.55663514,Y: 0.81683624}]
+    Entity Types
+        No entity type
+
+Block Id : 9dbc80d9-74e7-4bf3-aace-ed81b8cda97f
+    Detected text: 22,
+    Type: WORD
+    Confidence: 98.316574
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.018533457,Height: 0.031074699,Left: 0.61937445,Top: 0.78772944}
+        Polygon: [{X: 0.61937445,Y: 0.78772944}, {X: 0.6379079,Y: 0.78772944}, {X: 0.6379079,Y: 0.81880414}, {X: 0.61937445,Y: 0.81880414}]
+    Entity Types
+        No entity type
+
+Block Id : 9831f8af-0fe3-4c08-8858-8e974f58bffd
+    Detected text: 2110
+    Type: WORD
+    Confidence: 99.712685
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.029327648,Height: 0.026742542,Left: 0.64152414,Top: 0.78776413}
+        Polygon: [{X: 0.64152414,Y: 0.78776413}, {X: 0.67085177,Y: 0.78776413}, {X: 0.67085177,Y: 0.81450665}, {X: 0.64152414,Y: 0.81450665}]
+    Entity Types
+        No entity type
+
+Block Id : 318f9e0a-6615-43a3-8e0c-5b927898a7f3
+    Detected text: undetermined
+    Type: WORD
+    Confidence: 99.94999
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.08892409,Height: 0.02925131,Left: 0.22119011,Top: 0.1214624}
+        Polygon: [{X: 0.22119011,Y: 0.1214624}, {X: 0.3101142,Y: 0.1214624}, {X: 0.3101142,Y: 0.15071371}, {X: 0.22119011,Y: 0.15071371}]
+    Entity Types
+        No entity type
+
+Block Id : 98d899bb-24b7-447a-9ac4-909025ad9011
+    Detected text: Derence
+    Type: WORD
+    Confidence: 55.108982
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.12760524,Height: 0.06587871,Left: 0.36322933,Top: 0.75526917}
+        Polygon: [{X: 0.36322933,Y: 0.75526917}, {X: 0.49083456,Y: 0.75526917}, {X: 0.49083456,Y: 0.8211479}, {X: 0.36322933,Y: 0.8211479}]
+    Entity Types
+        No entity type
+
+shiqi.rao@C02GL0Q6MD6R aws-textract-demo % java -jar target/aws-textract-demo-1.0-SNAPSHOT.jar -Ddocument="3R-REPORT-2-1.png"
+Block Id : 5e21b215-18d5-4955-9200-1fd337c2cdb8
+    Detected text: December
+    Type: WORD
+    Confidence: 99.96418
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.06022302,Height: 0.028780114,Left: 0.55663514,Top: 0.78805614}
+        Polygon: [{X: 0.55663514,Y: 0.78805614}, {X: 0.6168581,Y: 0.78805614}, {X: 0.6168581,Y: 0.81683624}, {X: 0.55663514,Y: 0.81683624}]
+    Entity Types
+        No entity type
+
+Block Id : 002eb0fc-f832-433e-a9c4-3d367541de21
+    Detected text: 22,
+    Type: WORD
+    Confidence: 98.316574
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.018533457,Height: 0.031074699,Left: 0.61937445,Top: 0.78772944}
+        Polygon: [{X: 0.61937445,Y: 0.78772944}, {X: 0.6379079,Y: 0.78772944}, {X: 0.6379079,Y: 0.81880414}, {X: 0.61937445,Y: 0.81880414}]
+    Entity Types
+        No entity type
+
+Block Id : fded6fae-6415-40b0-bfa4-79adba738c1d
+    Detected text: 2110
+    Type: WORD
+    Confidence: 99.712685
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.029327648,Height: 0.026742542,Left: 0.64152414,Top: 0.78776413}
+        Polygon: [{X: 0.64152414,Y: 0.78776413}, {X: 0.67085177,Y: 0.78776413}, {X: 0.67085177,Y: 0.81450665}, {X: 0.64152414,Y: 0.81450665}]
+    Entity Types
+        No entity type
+
+Block Id : 2fc3e6dc-f241-4016-b10e-16f7a23c49d1
+    Detected text: undetermined
+    Type: WORD
+    Confidence: 99.94999
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.08892409,Height: 0.02925131,Left: 0.22119011,Top: 0.1214624}
+        Polygon: [{X: 0.22119011,Y: 0.1214624}, {X: 0.3101142,Y: 0.1214624}, {X: 0.3101142,Y: 0.15071371}, {X: 0.22119011,Y: 0.15071371}]
+    Entity Types
+        No entity type
+
+Block Id : a6d7d545-5163-4f2d-abb2-e953c028c936
+    Detected text: Derence
+    Type: WORD
+    Confidence: 55.108982
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.12760524,Height: 0.06587871,Left: 0.36322933,Top: 0.75526917}
+        Polygon: [{X: 0.36322933,Y: 0.75526917}, {X: 0.49083456,Y: 0.75526917}, {X: 0.49083456,Y: 0.8211479}, {X: 0.36322933,Y: 0.8211479}]
+    Entity Types
+        No entity type
+
+Block Id : 5e21b215-18d5-4955-9200-1fd337c2cdb8
+    Detected text: December
+    Type: WORD
+    Confidence: 99.96418
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.06022302,Height: 0.028780114,Left: 0.55663514,Top: 0.78805614}
+        Polygon: [{X: 0.55663514,Y: 0.78805614}, {X: 0.6168581,Y: 0.78805614}, {X: 0.6168581,Y: 0.81683624}, {X: 0.55663514,Y: 0.81683624}]
+    Entity Types
+        No entity type
+
+Block Id : 002eb0fc-f832-433e-a9c4-3d367541de21
+    Detected text: 22,
+    Type: WORD
+    Confidence: 98.316574
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.018533457,Height: 0.031074699,Left: 0.61937445,Top: 0.78772944}
+        Polygon: [{X: 0.61937445,Y: 0.78772944}, {X: 0.6379079,Y: 0.78772944}, {X: 0.6379079,Y: 0.81880414}, {X: 0.61937445,Y: 0.81880414}]
+    Entity Types
+        No entity type
+
+Block Id : fded6fae-6415-40b0-bfa4-79adba738c1d
+    Detected text: 2110
+    Type: WORD
+    Confidence: 99.712685
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.029327648,Height: 0.026742542,Left: 0.64152414,Top: 0.78776413}
+        Polygon: [{X: 0.64152414,Y: 0.78776413}, {X: 0.67085177,Y: 0.78776413}, {X: 0.67085177,Y: 0.81450665}, {X: 0.64152414,Y: 0.81450665}]
+    Entity Types
+        No entity type
+
+Block Id : 2fc3e6dc-f241-4016-b10e-16f7a23c49d1
+    Detected text: undetermined
+    Type: WORD
+    Confidence: 99.94999
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.08892409,Height: 0.02925131,Left: 0.22119011,Top: 0.1214624}
+        Polygon: [{X: 0.22119011,Y: 0.1214624}, {X: 0.3101142,Y: 0.1214624}, {X: 0.3101142,Y: 0.15071371}, {X: 0.22119011,Y: 0.15071371}]
+    Entity Types
+        No entity type
+
+Block Id : a6d7d545-5163-4f2d-abb2-e953c028c936
+    Detected text: Derence
+    Type: WORD
+    Confidence: 55.108982
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.12760524,Height: 0.06587871,Left: 0.36322933,Top: 0.75526917}
+        Polygon: [{X: 0.36322933,Y: 0.75526917}, {X: 0.49083456,Y: 0.75526917}, {X: 0.49083456,Y: 0.8211479}, {X: 0.36322933,Y: 0.8211479}]
+    Entity Types
+        No entity type
+
+^C%                                                                                                                                                                                                                     shiqi.rao@C02GL0Q6MD6R aws-textract-demo % java -jar -Ddocument="3R-REPORT-2-1.png" target/aws-textract-demo-1.0-SNAPSHOT.jar
+Block Id : 429e74cf-ff66-42d5-86b8-3bc3dba15439
+    Detected text: December
+    Type: WORD
+    Confidence: 99.89602
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.060354903,Height: 0.009588678,Left: 0.5570471,Top: 0.9296796}
+        Polygon: [{X: 0.5570471,Y: 0.9296796}, {X: 0.6174021,Y: 0.9296796}, {X: 0.6174021,Y: 0.93926823}, {X: 0.5570471,Y: 0.93926823}]
+    Entity Types
+        No entity type
+
+Block Id : 5635b8a0-e43f-43f8-a0ec-51f6dc553b7d
+    Detected text: 22,
+    Type: WORD
+    Confidence: 97.34504
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.018508086,Height: 0.009592674,Left: 0.61963636,Top: 0.9300382}
+        Polygon: [{X: 0.61963636,Y: 0.9300382}, {X: 0.63814443,Y: 0.9300382}, {X: 0.63814443,Y: 0.9396309}, {X: 0.61963636,Y: 0.9396309}]
+    Entity Types
+        No entity type
+
+Block Id : 417c7142-6801-4613-ad0c-1df8bc58ac46
+    Detected text: 2110
+    Type: WORD
+    Confidence: 97.646
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.029540729,Height: 0.009262695,Left: 0.6416724,Top: 0.9294475}
+        Polygon: [{X: 0.6416724,Y: 0.9294475}, {X: 0.6712131,Y: 0.9294475}, {X: 0.6712131,Y: 0.93871015}, {X: 0.6416724,Y: 0.93871015}]
+    Entity Types
+        No entity type
+
+Block Id : 429e74cf-ff66-42d5-86b8-3bc3dba15439
+    Detected text: December
+    Type: WORD
+    Confidence: 99.89602
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.060354903,Height: 0.009588678,Left: 0.5570471,Top: 0.9296796}
+        Polygon: [{X: 0.5570471,Y: 0.9296796}, {X: 0.6174021,Y: 0.9296796}, {X: 0.6174021,Y: 0.93926823}, {X: 0.5570471,Y: 0.93926823}]
+    Entity Types
+        No entity type
+
+Block Id : 5635b8a0-e43f-43f8-a0ec-51f6dc553b7d
+    Detected text: 22,
+    Type: WORD
+    Confidence: 97.34504
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.018508086,Height: 0.009592674,Left: 0.61963636,Top: 0.9300382}
+        Polygon: [{X: 0.61963636,Y: 0.9300382}, {X: 0.63814443,Y: 0.9300382}, {X: 0.63814443,Y: 0.9396309}, {X: 0.61963636,Y: 0.9396309}]
+    Entity Types
+        No entity type
+
+Block Id : 417c7142-6801-4613-ad0c-1df8bc58ac46
+    Detected text: 2110
+    Type: WORD
+    Confidence: 97.646
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.029540729,Height: 0.009262695,Left: 0.6416724,Top: 0.9294475}
+        Polygon: [{X: 0.6416724,Y: 0.9294475}, {X: 0.6712131,Y: 0.9294475}, {X: 0.6712131,Y: 0.93871015}, {X: 0.6416724,Y: 0.93871015}]
+    Entity Types
+        No entity type
+
+Block Id : 429e74cf-ff66-42d5-86b8-3bc3dba15439
+    Detected text: December
+    Type: WORD
+    Confidence: 99.89602
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.060354903,Height: 0.009588678,Left: 0.5570471,Top: 0.9296796}
+        Polygon: [{X: 0.5570471,Y: 0.9296796}, {X: 0.6174021,Y: 0.9296796}, {X: 0.6174021,Y: 0.93926823}, {X: 0.5570471,Y: 0.93926823}]
+    Entity Types
+        No entity type
+
+Block Id : 5635b8a0-e43f-43f8-a0ec-51f6dc553b7d
+    Detected text: 22,
+    Type: WORD
+    Confidence: 97.34504
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.018508086,Height: 0.009592674,Left: 0.61963636,Top: 0.9300382}
+        Polygon: [{X: 0.61963636,Y: 0.9300382}, {X: 0.63814443,Y: 0.9300382}, {X: 0.63814443,Y: 0.9396309}, {X: 0.61963636,Y: 0.9396309}]
+    Entity Types
+        No entity type
+
+Block Id : 417c7142-6801-4613-ad0c-1df8bc58ac46
+    Detected text: 2110
+    Type: WORD
+    Confidence: 97.646
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.029540729,Height: 0.009262695,Left: 0.6416724,Top: 0.9294475}
+        Polygon: [{X: 0.6416724,Y: 0.9294475}, {X: 0.6712131,Y: 0.9294475}, {X: 0.6712131,Y: 0.93871015}, {X: 0.6416724,Y: 0.93871015}]
+    Entity Types
+        No entity type
+
+Block Id : 429e74cf-ff66-42d5-86b8-3bc3dba15439
+    Detected text: December
+    Type: WORD
+    Confidence: 99.89602
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.060354903,Height: 0.009588678,Left: 0.5570471,Top: 0.9296796}
+        Polygon: [{X: 0.5570471,Y: 0.9296796}, {X: 0.6174021,Y: 0.9296796}, {X: 0.6174021,Y: 0.93926823}, {X: 0.5570471,Y: 0.93926823}]
+    Entity Types
+        No entity type
+
+Block Id : 5635b8a0-e43f-43f8-a0ec-51f6dc553b7d
+    Detected text: 22,
+    Type: WORD
+    Confidence: 97.34504
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.018508086,Height: 0.009592674,Left: 0.61963636,Top: 0.9300382}
+        Polygon: [{X: 0.61963636,Y: 0.9300382}, {X: 0.63814443,Y: 0.9300382}, {X: 0.63814443,Y: 0.9396309}, {X: 0.61963636,Y: 0.9396309}]
+    Entity Types
+        No entity type
+
+Block Id : 417c7142-6801-4613-ad0c-1df8bc58ac46
+    Detected text: 2110
+    Type: WORD
+    Confidence: 97.646
+    Relationships
+        No related Blocks
+    Geometry
+        Bounding Box: {Width: 0.029540729,Height: 0.009262695,Left: 0.6416724,Top: 0.9294475}
+        Polygon: [{X: 0.6416724,Y: 0.9294475}, {X: 0.6712131,Y: 0.9294475}, {X: 0.6712131,Y: 0.93871015}, {X: 0.6416724,Y: 0.93871015}]
+    Entity Types
+        No entity type
