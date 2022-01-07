@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 
 import com.amazonaws.client.builder.AwsClientBuilder.EndpointConfiguration;
 import com.amazonaws.services.s3.AmazonS3;
@@ -59,7 +60,7 @@ public class DocumentText extends JPanel {
   public static void main(String[] arg) throws Exception {
 
     // The S3 bucket and document
-    String document = System.getProperty("document", "1641530461707.jpg");
+    String document = System.getProperty("document", "3R-REPORT-2-1.png");
     String bucket = System.getProperty("bucket", "shiqi-detection-test");
 
     AmazonS3 s3client = AmazonS3ClientBuilder.standard()
@@ -90,7 +91,10 @@ public class DocumentText extends JPanel {
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     DocumentText panel = new DocumentText(result, image);
     panel.setPreferredSize(new Dimension(image.getWidth(), image.getHeight()));
-    frame.setContentPane(panel);
+    panel.setAutoscrolls(true);
+    JScrollPane sp = new JScrollPane(panel);
+    sp.setBounds(0, 0, 500, 500);
+    frame.getContentPane().add(sp);
     frame.pack();
     frame.setVisible(true);
   }

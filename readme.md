@@ -24,5 +24,3 @@ java -jar -Ddocument="{docment_name}[optional]" -Dbucket"{bucket_name}[optional]
 ## Terminal Result Sample
 [Sample](terminal_result.text)
 
-## Shortage
-Currently, the showing image part lacks the function of scrolling to view the whole image.
