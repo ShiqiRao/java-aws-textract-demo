@@ -12,6 +12,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Polygon;
 import java.awt.image.BufferedImage;
+import java.time.Instant;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -36,6 +37,8 @@ import com.amazonaws.services.textract.model.Block;
 import com.amazonaws.services.textract.model.BoundingBox;
 import com.amazonaws.services.textract.model.Document;
 import com.amazonaws.services.textract.model.FeatureType;
+import com.amazonaws.services.textract.model.HumanLoopConfig;
+import com.amazonaws.services.textract.model.HumanLoopDataAttributes;
 import com.amazonaws.services.textract.model.Point;
 import com.amazonaws.services.textract.model.Relationship;
 import com.amazonaws.services.textract.model.S3Object;
@@ -60,8 +63,10 @@ public class DocumentText extends JPanel {
   public static void main(String[] arg) throws Exception {
 
     // The S3 bucket and document
-    String document = System.getProperty("document", "3R-REPORT-2-1.png");
+    String document = System.getProperty("document", "1641530461707.jpg");
     String bucket = System.getProperty("bucket", "shiqi-detection-test");
+    String flowArn = System.getProperty("arn",
+        "arn:aws:sagemaker:us-east-1:742593912130:flow-definition/shiqi-test2");
 
     AmazonS3 s3client = AmazonS3ClientBuilder.standard()
         .withEndpointConfiguration(
@@ -79,7 +84,17 @@ public class DocumentText extends JPanel {
     AmazonTextract client = AmazonTextractClientBuilder.standard()
         .withEndpointConfiguration(endpoint).build();
 
+    // Set HumanLoop
+    HumanLoopConfig humanLoopConfig = new HumanLoopConfig();
+    humanLoopConfig.setFlowDefinitionArn(flowArn);
+    humanLoopConfig.setHumanLoopName("human-loop-name-" + Instant.now().getEpochSecond());
+    HumanLoopDataAttributes humanLoopDataAttributes = new HumanLoopDataAttributes();
+    humanLoopDataAttributes.setContentClassifiers(
+        List.of("FreeOfAdultContent"));
+    humanLoopConfig.setDataAttributes(humanLoopDataAttributes);
+
     AnalyzeDocumentRequest request = new AnalyzeDocumentRequest()
+        .withHumanLoopConfig(humanLoopConfig)
         .withFeatureTypes(FeatureType.FORMS)
         .withDocument(
             new Document().withS3Object(new S3Object().withName(document).withBucket(bucket)));

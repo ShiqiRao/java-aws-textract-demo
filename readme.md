@@ -16,7 +16,7 @@ Before running the program, make sure you have login AWS with AWS CLI, and uploa
 without startup arguments.)
 ```
 mvn clean install
-java -jar -Ddocument="{docment_name}[optional]" -Dbucket"{bucket_name}[optional]" target/aws-textract-demo-1.0-SNAPSHOT.jar
+java -jar -Ddocument="{docment_name}[optional]" -Dbucket"{bucket_name}[optional]" -Darn"{flow_arn}[optional]" target/aws-textract-demo-1.0-SNAPSHOT.jar
 ```
 
 ## Screenshot
