@@ -18,6 +18,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.function.Function;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import javax.imageio.ImageIO;
@@ -47,21 +48,19 @@ import com.amazonaws.services.textract.model.S3Object;
  * @author shiqi.rao
  */
 public class DocumentText extends JPanel {
-
   private static final long serialVersionUID = 1L;
 
   BufferedImage image;
   AnalyzeDocumentResult result;
+  Map<String, List<Block>> kvMap = null;
 
-  public DocumentText(AnalyzeDocumentResult documentResult, BufferedImage bufImage)
-      throws Exception {
+  public DocumentText(AnalyzeDocumentResult documentResult, BufferedImage bufImage) {
     super();
     result = documentResult; // Results of text detection.
     image = bufImage; // The image containing the document.
   }
 
   public static void main(String[] arg) throws Exception {
-
     // The S3 bucket and document
     String document = System.getProperty("document", "1641530461707.jpg");
     String bucket = System.getProperty("bucket", "shiqi-detection-test");
@@ -123,32 +122,30 @@ public class DocumentText extends JPanel {
 
     // Draw the image.
     g2d.drawImage(image, 0, 0, image.getWidth(this), image.getHeight(this), this);
-    drawSignatureAndDate(height, width, g2d);
+    drawBoundingBoxWithCondition(height, width, g2d,
+        k -> k.toLowerCase(Locale.ROOT)
+            .contains(("Signature of Buyer(s)").toLowerCase(
+                Locale.ROOT).replaceAll(" ", "")));
   }
 
-  private void drawSignatureAndDate(int height, int width, Graphics2D g2d) {
-    Map<String, List<Block>> kvMap = new HashMap<>();
-    findSignatureAndDate(kvMap);
+  private void drawBoundingBoxWithCondition(int height, int width, Graphics2D g2d,
+      Predicate<String> condition) {
+    if (kvMap == null) {
+      kvMap = relationshipMap();
+    }
     kvMap.forEach((k, v) -> {
-      if (k.toLowerCase(Locale.ROOT).contains("signature")
-          || k.toLowerCase(Locale.ROOT).contains("date")) {
+      if (condition.test(k)) {
         for (Block block : v) {
-          DisplayBlockInfo(block);
-          if ((block.getBlockType()).equals("LINE")) {
-            showPolygon(height, width, block.getGeometry().getPolygon(), g2d);
-                        /*
-                          ShowBoundingBox(height, width, block.getGeometry().getBoundingBox(), g2d);
-                         */
-          } else { // its a word, so just show vertical lines.
-            showBoundingBox(height, width, block.getGeometry().getBoundingBox(), g2d,
-                block.getConfidence().intValue() + "");
-          }
+          displayBlockInfo(block);
+          showBoundingBox(height, width, block.getGeometry().getBoundingBox(), g2d,
+              block.getConfidence().intValue() + "");
         }
       }
     });
   }
 
-  private void findSignatureAndDate(Map<String, List<Block>> kvMap) {
+  private Map<String, List<Block>> relationshipMap() {
+    Map<String, List<Block>> map = new HashMap<>();
     Map<String, Block> blockMap = result.getBlocks().stream()
         .collect(Collectors.toMap(Block::getId, Function.identity()));
     List<Block> keyRefBlock = result.getBlocks().stream()
@@ -174,8 +171,14 @@ public class DocumentText extends JPanel {
           .flatMap(relationship -> relationship.getIds().stream())
           .map(blockMap::get)
           .collect(Collectors.toList());
-      kvMap.put(keyText, valueBlocks);
+      List<Block> former = map.get(keyText);
+      if(former == null){
+        map.put(keyText, valueBlocks);
+      }else {
+        former.addAll(valueBlocks);
+      }
     }
+    return map;
   }
 
   // Show bounding box at supplied location.
@@ -227,12 +230,12 @@ public class DocumentText extends JPanel {
   }
 
   //Displays information from a block returned by text detection and text analysis
-  private void DisplayBlockInfo(Block block) {
+  private void displayBlockInfo(Block block) {
     System.out.println("Block Id : " + block.getId());
     if (block.getText() != null) {System.out.println("    Detected text: " + block.getText());}
     System.out.println("    Type: " + block.getBlockType());
 
-    if (block.getBlockType().equals("PAGE") != true) {
+    if (!block.getBlockType().equals("PAGE")) {
       System.out.println("    Confidence: " + block.getConfidence().toString());
     }
     if (block.getBlockType().equals("CELL")) {
